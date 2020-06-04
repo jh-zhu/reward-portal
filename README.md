@@ -1,6 +1,6 @@
-# reward-portal
+# Reward Portal Prototype
 
-Prototype of a credit card reward portal. Cloud enabled microservices using Spring Cloud Eureka stack. 
+Prototype of a credit card web reward portal. Cloud enabled microservices using Spring Cloud Eureka stack. 
 
 ## Component: 
 
@@ -10,4 +10,13 @@ Prototype of a credit card reward portal. Cloud enabled microservices using Spri
 
 ## Public API 
 
-* 
+*  /product/list
+GET request to get available 
+
+* /order/create
+POST request to create order 
+
+Sample Request Body: 
+name: "John"
+
+
