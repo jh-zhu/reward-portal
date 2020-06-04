@@ -11,7 +11,7 @@ Prototype of a credit card web reward portal. Cloud enabled microservices using 
 ## Public API 
 
 *  /product/list
- * GET request to get available 
+ * Get request to get availiable reward merchandise
 
 * /order/create
   * POST request to create order 
