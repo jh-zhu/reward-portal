@@ -7,9 +7,12 @@ import java.util.stream.Collectors;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.demo.model.CartDTO;
 import com.demo.model.Product_category;
 import com.demo.model.Product_info;
 import com.demo.service.CategoryService;
@@ -68,4 +71,17 @@ public class ProductController {
 			
 			return resultVO;
 		}
+	
+	
+	@PostMapping("/listForOrder")
+	public List<Product_info> listForOrder(@RequestBody List<String> productIdList){
+		return productService.findList(productIdList);
+	}
+	
+	@PostMapping("/decreaseStock")
+	public void decreaseStock(@RequestBody List<CartDTO> cartDTOList) {
+		productService.decreaseStock(cartDTOList);
+	}
+	
+	
 }
