@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    config: 
+      server:
+        git:
+          uri: https://github.com/jh-zhu/reward-config-repo 
+          username: jh-zhu
+          password: Sopemma0310!
+  
+  application:
+    name: config
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 0
+
+  
