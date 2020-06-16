@@ -7,6 +7,7 @@ Prototype of a credit card web reward portal. Cloud enabled microservices using 
 * Eureka Server
 * Inventory Service
 * Order Service 
+* Configuration Center
 
 ## Public API 
 * /product/list
