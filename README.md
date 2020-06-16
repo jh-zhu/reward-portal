@@ -8,6 +8,7 @@ Prototype of a credit card web reward portal. Cloud enabled microservices using 
 * Inventory Service
 * Order Service 
 * Configuration Center
+* Gateway
 
 ## Public API 
 * /product/list
